@@ -1,2 +1,2 @@
 # CSE201
-It was code for CSE201 class I took before.
+This file includes code for CSE202 that I learned C++
