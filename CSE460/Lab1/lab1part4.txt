@@ -1,0 +1,78 @@
+Script started on 2020-04-10 16:03:54-07:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="80" LINES="24"]
+]0;005897537@csusb.edu@jb358-9:~/cse460/labs/lab1/code[005897537@csusb.edu@jb358-9 code]$ make  clean
+rm -f *.o lab1
+]0;005897537@csusb.edu@jb358-9:~/cse460/labs/lab1/code[005897537@csusb.edu@jb358-9 code]$ make
+g++ -c -g main.cpp
+g++ -c -g functions.cpp
+g++ main.o functions.o -o lab1
+]0;005897537@csusb.edu@jb358-9:~/cse460/labs/lab1/code[005897537@csusb.edu@jb358-9 code]$ gdb lab1
+[35;1mGNU gdb (GDB) Fedora 8.3-6.fc30
+[mCopyright (C) 2019 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-redhat-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from [32mlab1[m...
+(gdb) break find_max
+Breakpoint 1 at [34m0x40138e[m: file [32mfunctions.cpp[m, line 48.
+(gdb) run
+Starting program: /home/csusb.edu/005897537/cse460/labs/lab1/code/lab1 
+Missing separate debuginfos, use: dnf debuginfo-install glibc-2.29-22.fc30.x86_64
+How big is the array? 50
+
+Breakpoint 1, [33mfind_max[m ([36marray[m=0x7fffffffc870, [36mlength[m=50, [36mmax[m=0x7fffffffc86c)[m
+   [m at [32mfunctions.cpp[m:48
+48	   [31m*[mmax [31m=[m array [31m[[m[35m0[m[31m];[m
+Missing separate debuginfos, use: dnf debuginfo-install libgcc-9.2.1-1.fc30.x86_64 libstdc++-9.2.1-1.fc30.x86_64
+(gdb) print #[K*array@50
+$1 = {70, 78, 55, 94, 58, 93, 58, 60, 71, 28, 19, 53, 25, 65, 69, 86, 67, 8, [m
+  [m3, 22, 53, 14, 11, 52, 19, 9, 3, 73, 11, 91, 87, 32, 68, 41, 25, 77, 86, 34, [m
+  [m36, 56, 61, 6, 61, 86, 22, 29, 23, 89, 36, 78}
+(gdb) next[K[K[K[Kprint *max
+$2 = 0
+(gdb) next
+49	    [01;34mfor[m [31m([mi [31m=[m [35m1[m[31m;[m i [31m<[m length[31m;[m i [31m++)[m
+(gdb) next
+51	        [01;34mif[m [31m(*[mmax [31m<[m array [31m[[mi[31m])[m
+(gdb) print *max
+$3 = 70
+(gdb) until 54
+[33mfind_max[m ([36marray[m=0x7fffffffc870, [36mlength[m=50, [36mmax[m=0x7fffffffc86c)[m
+   [m at [32mfunctions.cpp[m:57
+57	    [01;34mreturn[m [35m0[m[31m;[m
+(gdb) print *max
+$4 = 94
+(gdb) next
+58	[31m}[m
+(gdb) next
+[33mmain[m () at [32mmain.cpp[m:20
+20	    [01;34mif[m [31m([m[01mfind_max[m [31m([marray[31m,[m size[31m,&[mmax[31m)[m [31m!=[m [35m0[m [31m)[m
+(gdb) next
+25	    cout [31m<<[m [31m"max value in array is: "[m [31m<<[mmax[31m;[m
+(gdb) next
+26		cout [31m<<[m endl[31m;[m
+(gdb) next
+max value in array is: 94
+28	    [01;34mreturn[m [35m0[m[31m;[m
+(gdb) next
+29	[31m}[m
+(gdb) next
+[34m0x00007ffff7a8ff43[m in [33m__libc_start_main[m () from /lib64/libc.so.6
+(gdb) next
+Single stepping until exit from function __libc_start_main,
+which has no line number information.
+[Inferior 1 (process 8715) exited normally]
+(gdb) quit
+]0;005897537@csusb.edu@jb358-9:~/cse460/labs/lab1/code[005897537@csusb.edu@jb358-9 code]$ exit[K[K[K[Kexit
+exit
+
+Script done on 2020-04-10 16:05:49-07:00 [COMMAND_EXIT_CODE="0"]

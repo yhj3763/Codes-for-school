@@ -1,0 +1,116 @@
+Script started on 2020-05-15 16:42:36-07:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="80" LINES="24"]
+]0;005897537@csusb.edu@jb358-10:~/cse460/labs/lab6[005897537@csusb.edu@jb358-10 lab6]$ gcc badcnt.c -o xbadcnt -lpthread
+]0;005897537@csusb.edu@jb358-10:~/cse460/labs/lab6[005897537@csusb.edu@jb358-10 lab6]$ ./b[Kb[Kxbadcnt
+
+ BOOM! cnt is [1017384], should be 2000000
+]0;005897537@csusb.edu@jb358-10:~/cse460/labs/lab6[005897537@csusb.edu@jb358-10 lab6]$ gcc goodcnt.c -o ogoodcnt -lpthread
+]0;005897537@csusb.edu@jb358-10:~/cse460/labs/lab6[005897537@csusb.edu@jb358-10 lab6]$ ./ogoodcnt
+
+ OK! cnt is [2000000]
+]0;005897537@csusb.edu@jb358-10:~/cse460/labs/lab6[005897537@csusb.edu@jb358-10 lab6]$ gcc pc.c -o pc -lpthread
+]0;005897537@csusb.edu@jb358-10:~/cse460/labs/lab6[005897537@csusb.edu@jb358-10 lab6]$ ./pc 5 5
+Producer [140085556549376] produced 383
+Producer [140085556549376] produced 915
+Producer [140085556549376] produced 793
+Producer [140085539763968] produced 777
+  Consumer [140085441844992] consumed 383
+Producer [140085548156672] produced 886
+Producer [140085556549376] produced 335
+  Consumer [140085425059584] consumed 915
+  Consumer [140085433452288] consumed 793
+Producer [140085458630400] produced 386
+  Consumer [140085441844992] consumed 777
+  Consumer [140085433452288] consumed 886
+Producer [140085450237696] produced 492
+  Consumer [140085425059584] consumed 335
+  Consumer [140085425059584] consumed 386
+Producer [140085556549376] produced 362
+  Consumer [140085416666880] consumed 492
+Producer [140085458630400] produced 27
+  Consumer [140085441844992] consumed 362
+  Consumer [140085408274176] consumed 27
+Producer [140085458630400] produced 763
+Producer [140085556549376] produced 59
+  Consumer [140085425059584] consumed 763
+Producer [140085539763968] produced 649
+  Consumer [140085425059584] consumed 59
+Producer [140085450237696] produced 690
+  Consumer [140085425059584] consumed 649
+Producer [140085556549376] produced 540
+Producer [140085458630400] produced 926
+  Consumer [140085408274176] consumed 690
+  Consumer [140085433452288] consumed 540
+Producer [140085450237696] produced 172
+Producer [140085539763968] produced 426
+  Consumer [140085441844992] consumed 926
+  Consumer [140085408274176] consumed 172
+Producer [140085458630400] produced 211
+Producer [140085548156672] produced 421
+  Consumer [140085425059584] consumed 426
+Producer [140085539763968] produced 567
+Producer [140085450237696] produced 368
+  Consumer [140085433452288] consumed 211
+  Consumer [140085441844992] consumed 421
+Producer [140085458630400] produced 429
+Producer [140085556549376] produced 736
+  Consumer [140085408274176] consumed 567
+  Consumer [140085433452288] consumed 368
+Producer [140085539763968] produced 530
+Producer [140085450237696] produced 862
+  Consumer [140085441844992] consumed 429
+Producer [140085450237696] produced 929
+  Consumer [140085425059584] consumed 736
+  Consumer [140085433452288] consumed 530
+Producer [140085556549376] produced 67
+Producer [140085539763968] produced 135
+Producer [140085548156672] produced 782
+  Consumer [140085416666880] consumed 862
+  Consumer [140085433452288] consumed 929
+  Consumer [140085441844992] consumed 67
+Producer [140085556549376] produced 22
+  Consumer [140085408274176] consumed 135
+Producer [140085548156672] produced 69
+  Consumer [140085425059584] consumed 782
+  Consumer [140085433452288] consumed 22
+  Consumer [140085416666880] consumed 69
+Producer [140085458630400] produced 123
+Producer [140085450237696] produced 802
+Producer [140085458630400] produced 393
+  Consumer [140085408274176] consumed 123
+Producer [140085539763968] produced 58
+Producer [140085450237696] produced 456
+  Consumer [140085433452288] consumed 802
+  Consumer [140085416666880] consumed 393
+  Consumer [140085441844992] consumed 58
+Producer [140085539763968] produced 42
+  Consumer [140085425059584] consumed 456
+  Consumer [140085433452288] consumed 42
+Producer [140085548156672] produced 167
+Producer [140085450237696] produced 229
+Producer [140085458630400] produced 11
+  Consumer [140085408274176] consumed 167
+  Consumer [140085441844992] consumed 229
+  Consumer [140085416666880] consumed 11
+Producer [140085548156672] produced 421
+Producer [140085539763968] produced 373
+Producer [140085450237696] produced 919
+Producer [140085458630400] produced 784
+Producer [140085548156672] produced 537
+  Consumer [140085441844992] consumed 421
+  Consumer [140085416666880] consumed 373
+  Consumer [140085408274176] consumed 919
+Producer [140085548156672] produced 324
+Producer [140085548156672] produced 315
+  Consumer [140085408274176] consumed 784
+Producer [140085539763968] produced 198
+Producer [140085548156672] produced 370
+  Consumer [140085408274176] consumed 537
+  Consumer [140085416666880] consumed 324
+  Consumer [140085416666880] consumed 315
+  Consumer [140085416666880] consumed 198
+  Consumer [140085416666880] consumed 370
+Exit the program
+]0;005897537@csusb.edu@jb358-10:~/cse460/labs/lab6[005897537@csusb.edu@jb358-10 lab6]$ exit
+exit
+
+Script done on 2020-05-15 16:43:50-07:00 [COMMAND_EXIT_CODE="0"]

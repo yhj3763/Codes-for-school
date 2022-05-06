@@ -1,0 +1,140 @@
+Script started on 2020-04-26 20:25:28-07:00 [TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="80" LINES="24"]
+]0;005897537@csusb.edu@jb358-10:~/cse460/labs/lab3[005897537@csusb.edu@jb358-10 lab3]$ man cat
+[?1049h[22;0;0t[?1h=CAT(1)                           User Commands                          CAT(1)[m
+[m
+[1mNAME[0m[m
+       cat - concatenate files and print on the standard output[m
+[m
+[1mSYNOPSIS[0m[m
+       [1mcat [22m[[4mOPTION[24m]... [[4mFILE[24m]...[m
+[m
+[1mDESCRIPTION[0m[m
+       Concatenate FILE(s) to standard output.[m
+[m
+       With no FILE, or when FILE is -, read standard input.[m
+[m
+       [1m-A[22m, [1m--show-all[0m[m
+              equivalent to [1m-vET[0m[m
+[m
+       [1m-b[22m, [1m--number-nonblank[0m[m
+              number nonempty output lines, overrides [1m-n[0m[m
+[m
+       [1m-e     [22mequivalent to [1m-vE[0m[m
+[m
+       [1m-E[22m, [1m--show-ends[0m[m
+              display $ at end of each line[m
+[7m Manual page cat(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page cat(1) line 2 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m-n[22m, [1m--number[0m[m
+[7m Manual page cat(1) line 3 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              number all output lines[m
+[7m Manual page cat(1) line 4 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page cat(1) line 5 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m-s[22m, [1m--squeeze-blank[0m[m
+[7m Manual page cat(1) line 6 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              suppress repeated empty output lines[m
+[7m Manual page cat(1) line 7 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page cat(1) line 8 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m-t     [22mequivalent to [1m-vT[0m[m
+[7m Manual page cat(1) line 9 (press h for help or q to quit)[27m[K[K[?1l>[?1049l[23;0;0t]0;005897537@csusb.edu@jb358-10:~/cse460/labs/lab3[005897537@csusb.edu@jb358-10 lab3]$ ./myCat
+Not enough arguments
+]0;005897537@csusb.edu@jb358-10:~/cse460/labs/lab3[005897537@csusb.edu@jb358-10 lab3]$ ./myCat main.cpp
+Not enough arguments
+]0;005897537@csusb.edu@jb358-10:~/cse460/labs/lab3[005897537@csusb.edu@jb358-10 lab3]$ ./myCat main.cpp functions.cpp
+In the CHILD process
+Process ID:15381
+Parent Process ID:15380
+Process group ID:15380
+     1	#include <iostream>
+     2	#include "functions.h"
+     3	
+     4	using namespace std;
+     5	
+     6	int main ()
+     7	{
+     8	    int array[100];
+     9	    int max = 0;
+    10	    int size = 0;
+    11	
+    12	    cout << "How big is the array? ";
+    13	    cin >> size;
+    14	    if (initialize (array, size) != 0 )
+    15	    {
+    16	        cout << "initialization error\n";
+    17	        return 1;
+    18	    }
+    19	
+    20	    if (find_max (array, size,&max) != 0 )
+    21	    {
+    22	        cout << "some function error\n";
+    23	        return 1;
+    24	    }
+    25	    cout << "max value in array is: " <<max;
+    26		cout << endl;
+    27	
+    28	    return 0;
+    29	}
+    30	
+ㄴt  Sticking two files together
+    31	Sticking two files together
+    32	#include <cstdlib>
+    33	#include <time.h>
+    34	#include "functions.h"
+    35	
+    36	
+    37	/* FUNCTION: initialize
+    38	 * This function should initialize the array 
+    39	 * to random values between 1 and 500
+    40	 *
+    41	 * The arguments are:
+    42	 *     array: pointer to an array of integer values
+    43	 *     length: size of array
+    44	 *
+    45	 * It returns:
+    46	 *     0: on success
+    47	 *     non-zero: on an error
+    48	 */
+    49	int initialize (int* array, int length)
+    50	{
+    51	    srand(time(0));
+    52		int i;
+    53	
+    54	    for (i = 0; i < length; i ++)
+    55	    {
+    56	        array [i] = rand()%100 + 1;
+    57	    }
+    58	  
+    59	    return 0;
+    60	}
+    61	
+    62	/* FUNCTION: find_max
+    63	 * This function should find the largest element in the array and
+    64	 * return it through the argument max.
+    65	 *
+    66	 * The arguments are:
+    67	 *     array: pointer to an array of integer values
+    68	 *     length: size of array
+    69	 *     max: set to the largest value in array 
+    70	 *
+    71	 * It returns:
+    72	 *     0: on success
+    73	 *     non-zero: on an error
+    74	 */
+    75	int find_max (int* array, int length, int* max)
+    76	{
+    77	    int i;
+    78	
+    79	   *max = array [0];
+    80	    for (i = 1; i < length; i ++)
+    81	    {
+    82	        if (*max < array [i])
+    83	        { 
+    84	            *max = array [i];
+    85	        }
+    86	    }
+    87	
+    88	    return 0;
+    89	}
+In the PARENT process
+Process ID:15380
+Parent Process ID:15316
+Process group ID:15380
+]0;005897537@csusb.edu@jb358-10:~/cse460/labs/lab3[005897537@csusb.edu@jb358-10 lab3]$ eixt[K[K[Kxit
+exit
+
+Script done on 2020-04-26 20:26:27-07:00 [COMMAND_EXIT_CODE="0"]

@@ -1,0 +1,60 @@
+Script started on 2020-04-17 13:40:16-07:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="80" LINES="24"]
+]0;005897537@csusb.edu@jb358-11:~/cse460/labs/lab2[005897537@csusb.edu@jb358-11 lab2]$ rm -r backup
+]0;005897537@csusb.edu@jb358-11:~/cse460/labs/lab2[005897537@csusb.edu@jb358-11 lab2]$ ls -l
+total 30
+-rw-r--r-- 1 005897537@csusb.edu domain users@csusb.edu 1100 Apr 17 00:00 functions.cpp
+-rw-r--r-- 1 005897537@csusb.edu domain users@csusb.edu    0 Apr 17 13:40 lab2log.txt
+-rwxr-xr-x 1 005897537@csusb.edu domain users@csusb.edu  307 Apr 17 12:20 [0m[38;5;40mlab2.sh[0m
+-rw-r--r-- 1 005897537@csusb.edu domain users@csusb.edu  497 Apr 17 12:20 main.cpp
+-rw-r--r-- 1 005897537@csusb.edu domain users@csusb.edu    0 Apr 17 13:39 test.cpp
+]0;005897537@csusb.edu@jb358-11:~/cse460/labs/lab2[005897537@csusb.edu@jb358-11 lab2]$ ./lab2.sh
+Enter a backup directory name: 
+backup
+'backup' directory has been creadted
+
+functions.cpp is updated
+main.cpp is updated
+test.cpp is updated
+]0;005897537@csusb.edu@jb358-11:~/cse460/labs/lab2[005897537@csusb.edu@jb358-11 lab2]$ ls -l backup
+total 20
+-rw-r--r-- 1 005897537@csusb.edu domain users@csusb.edu 1100 Apr 17 13:40 functions.cpp
+-rw-r--r-- 1 005897537@csusb.edu domain users@csusb.edu  497 Apr 17 13:40 main.cpp
+-rw-r--r-- 1 005897537@csusb.edu domain users@csusb.edu    0 Apr 17 13:40 test.cpp
+]0;005897537@csusb.edu@jb358-11:~/cse460/labs/lab2[005897537@csusb.edu@jb358-11 lab2]$ ls -l backup[3P./lab2.shls -l backup[3P./lab2.sh
+Enter a backup directory name: 
+backup
+
+functions.cpp is latest version
+main.cpp is latest version
+test.cpp is latest version
+]0;005897537@csusb.edu@jb358-11:~/cse460/labs/lab2[005897537@csusb.edu@jb358-11 lab2]$ echo "something" >>functions.cpp
+]0;005897537@csusb.edu@jb358-11:~/cse460/labs/lab2[005897537@csusb.edu@jb358-11 lab2]$ echo "something" >>functions.cpp[K[K[K[K[K[K[K[K[K[K[K[K[Kmain.cpp
+]0;005897537@csusb.edu@jb358-11:~/cse460/labs/lab2[005897537@csusb.edu@jb358-11 lab2]$ echo "something" >>main.cpp[K[K[K[K[K[K[K[Ktest.cpp
+]0;005897537@csusb.edu@jb358-11:~/cse460/labs/lab2[005897537@csusb.edu@jb358-11 lab2]$ ./lab2.sh
+Enter a backup directory name: 
+backup
+
+functions.cpp is updated
+main.cpp is updated
+test.cpp is updated
+]0;005897537@csusb.edu@jb358-11:~/cse460/labs/lab2[005897537@csusb.edu@jb358-11 lab2]$ echo "something" >>mian.c[K[K[K[K[Kainc[K.cpp
+]0;005897537@csusb.edu@jb358-11:~/cse460/labs/lab2[005897537@csusb.edu@jb358-11 lab2]$ ./kab[K[K[Klab2.sh
+Enter a backup directory name: 
+backup
+
+functions.cpp is latest version
+main.cpp is updated
+test.cpp is latest version
+]0;005897537@csusb.edu@jb358-11:~/cse460/labs/lab2[005897537@csusb.edu@jb358-11 lab2]$ touch mine[K[K[Kine.cpp[K[K[K[K[K[K[K[Klo.[Kl.cpp
+]0;005897537@csusb.edu@jb358-11:~/cse460/labs/lab2[005897537@csusb.edu@jb358-11 lab2]$ ./lab2.sh
+Enter a backup directory name: 
+backup
+
+functions.cpp is latest version
+lol.cpp is updated
+main.cpp is latest version
+test.cpp is latest version
+]0;005897537@csusb.edu@jb358-11:~/cse460/labs/lab2[005897537@csusb.edu@jb358-11 lab2]$ exit
+exit
+
+Script done on 2020-04-17 13:44:54-07:00 [COMMAND_EXIT_CODE="0"]

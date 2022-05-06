@@ -1,0 +1,70 @@
+Script started on 2020-05-11 23:10:05-07:00 [TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="80" LINES="24"]
+]0;005897537@csusb.edu@jb358-10:~/cse460/hw1[005897537@csusb.edu@jb358-10 hw1]$ ./[K[Kgcc -o myshell myshell.c
+]0;005897537@csusb.edu@jb358-10:~/cse460/hw1[005897537@csusb.edu@jb358-10 hw1]$ ./myshell
+ myshell > help
+Hyeongjun's LSH
+Type program names and arguments, and hit enter.
+The following are built in:
+  cd
+  help
+  STOP
+  setshellname
+  setterminator
+  newname
+  listnewnames
+  savenewnames
+  readnewnames
+Use the man command for information on other programs.
+ myshell > ls -l
+total 39
+-rw-r--r-- 1 005897537@csusb.edu domain users@csusb.edu     0 May 11 23:10 exe.txt
+-rwxr-xr-x 1 005897537@csusb.edu domain users@csusb.edu 24320 May 11 23:10 myshell
+-rw-r--r-- 1 005897537@csusb.edu domain users@csusb.edu 15881 May 11 23:00 myshell.c
+ myshell > setseh  hellname mysh
+ mysh > setterminator $
+ mysh $ who
+005897537@csusb.edu pts/0        2020-05-11 20:26 (139.182.154.17)
+005897537@csusb.edu pts/1        2020-05-11 20:42
+005897537@csusb.edu pts/2        2020-05-11 20:48
+005897537@csusb.edu pts/3        2020-05-11 23:08 (139.182.154.17)
+005897537@csusb.edu pts/4        2020-05-11 20:50
+005897537@csusb.edu pts/5        2020-05-11 20:53
+005897537@csusb.edu pts/6        2020-05-11 20:57
+006199033@csusb.edu pts/7        2020-05-11 20:57 (139.182.154.17)
+005897537@csusb.edu pts/8        2020-05-11 23:10
+ mysh $ newname myhelp help
+ mysh $ newname mycopy cp
+ mysh $ 
+ mysh $ newname mycat cat
+ mysh $ newname mydel rm
+ mysh $ savenewnames myaliases
+ mysh $ listnewnames
+myhelp help
+mycopy cp
+mycat cat
+mydel rm
+ mysh $ mycat myaliases
+myhelp help
+mycopy cp
+mycat cat
+mydel rm
+ mysh $ mycopy /etc/motd myfile
+ mysh $ mycat myfile
+ mysh $ cat myfile
+ mysh $ ls
+exe.txt  myaliases  myfile  myshell  myshell.c
+ mysh $ listnewnames
+myhelp help
+mycopy cp
+mycat cat
+mydel rm
+ mysh $ readnewnames myaliases
+myhelp help
+mycopy cp
+mycat cat
+mydel rm
+ mysh $ STOP
+]0;005897537@csusb.edu@jb358-10:~/cse460/hw1[005897537@csusb.edu@jb358-10 hw1]$ eix[K[Kxit
+exit
+
+Script done on 2020-05-11 23:12:16-07:00 [COMMAND_EXIT_CODE="0"]

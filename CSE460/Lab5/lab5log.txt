@@ -1,0 +1,27 @@
+Script started on 2020-05-08 18:34:20-07:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="80" LINES="24"]
+]0;005897537@csusb.edu@jb358-10:~/cse460/labs/lab5[005897537@csusb.edu@jb358-10 lab5]$ ls -l
+total 29
+-rw-r--r-- 1 005897537@csusb.edu domain users@csusb.edu  1346 May  8 18:32 lab5.cpp
+-rw-r--r-- 1 005897537@csusb.edu domain users@csusb.edu     0 May  8 18:34 lab5log.txt
+-rwxr-xr-x 1 005897537@csusb.edu domain users@csusb.edu 23072 May  8 18:32 [0m[38;5;40mmyIO[0m
+]0;005897537@csusb.edu@jb358-10:~/cse460/labs/lab5[005897537@csusb.edu@jb358-10 lab5]$ my[K[K./myIO
+Argument is not enough.
+]0;005897537@csusb.edu@jb358-10:~/cse460/labs/lab5[005897537@csusb.edu@jb358-10 lab5]$ ./myIO file.txt
+This is a message for input :)
+This is parent process.
+This is a message for input :)
+]0;005897537@csusb.edu@jb358-10:~/cse460/labs/lab5[005897537@csusb.edu@jb358-10 lab5]$ ls -l
+total 30
+-rw------- 1 005897537@csusb.edu domain users@csusb.edu    31 May  8 18:35 file.txt
+-rw-r--r-- 1 005897537@csusb.edu domain users@csusb.edu  1346 May  8 18:32 lab5.cpp
+-rw-r--r-- 1 005897537@csusb.edu domain users@csusb.edu     0 May  8 18:34 lab5log.txt
+-rwxr-xr-x 1 005897537@csusb.edu domain users@csusb.edu 23072 May  8 18:32 [0m[38;5;40mmyIO[0m
+]0;005897537@csusb.edu@jb358-10:~/cse460/labs/lab5[005897537@csusb.edu@jb358-10 lab5]$ cat file.txt[K[K[K[K.txt
+This is a message for input :)
+]0;005897537@csusb.edu@jb358-10:~/cse460/labs/lab5[005897537@csusb.edu@jb358-10 lab5]$ cat file.txt[7Pls -l./myIO file.txt/file.txt
+./myIO: Permission denied
+./myIO: No such file or directory
+]0;005897537@csusb.edu@jb358-10:~/cse460/labs/lab5[005897537@csusb.edu@jb358-10 lab5]$ exit
+exit
+
+Script done on 2020-05-08 18:35:45-07:00 [COMMAND_EXIT_CODE="1"]

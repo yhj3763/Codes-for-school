@@ -1,0 +1,27 @@
+Script started on 2020-04-10 15:45:05-07:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="80" LINES="24"]
+]0;005897537@csusb.edu@jb358-9:~[005897537@csusb.edu@jb358-9 ~]$ mkdir cse460
+]0;005897537@csusb.edu@jb358-9:~[005897537@csusb.edu@jb358-9 ~]$ cd m[Kcse460
+]0;005897537@csusb.edu@jb358-9:~/cse460[005897537@csusb.edu@jb358-9 cse460]$ mkdir labs
+]0;005897537@csusb.edu@jb358-9:~/cse460[005897537@csusb.edu@jb358-9 cse460]$ cd labs
+]0;005897537@csusb.edu@jb358-9:~/cse460/labs[005897537@csusb.edu@jb358-9 labs]$ mkdir lab1
+]0;005897537@csusb.edu@jb358-9:~/cse460/labs[005897537@csusb.edu@jb358-9 labs]$ cd lab1
+]0;005897537@csusb.edu@jb358-9:~/cse460/labs/lab1[005897537@csusb.edu@jb358-9 lab1]$ mkdir unix code
+]0;005897537@csusb.edu@jb358-9:~/cse460/labs/lab1[005897537@csusb.edu@jb358-9 lab1]$ cd n[Kunix
+]0;005897537@csusb.edu@jb358-9:~/cse460/labs/lab1/unix[005897537@csusb.edu@jb358-9 unix]$ touch one two three
+]0;005897537@csusb.edu@jb358-9:~/cse460/labs/lab1/unix[005897537@csusb.edu@jb358-9 unix]$ ls -l
+total 2
+-rw-r--r-- 1 005897537@csusb.edu domain users@csusb.edu 0 Apr 10 15:45 one
+-rw-r--r-- 1 005897537@csusb.edu domain users@csusb.edu 0 Apr 10 15:45 three
+-rw-r--r-- 1 005897537@csusb.edu domain users@csusb.edu 0 Apr 10 15:45 two
+]0;005897537@csusb.edu@jb358-9:~/cse460/labs/lab1/unix[005897537@csusb.edu@jb358-9 unix]$ mkdir BAK
+]0;005897537@csusb.edu@jb358-9:~/cse460/labs/lab1/unix[005897537@csusb.edu@jb358-9 unix]$ cp th[K[Kthee[K[Kree BAK/three.bak
+]0;005897537@csusb.edu@jb358-9:~/cse460/labs/lab1/unix[005897537@csusb.edu@jb358-9 unix]$ cd BAK
+]0;005897537@csusb.edu@jb358-9:~/cse460/labs/lab1/unix/BAK[005897537@csusb.edu@jb358-9 BAK]$ ls -l
+total 1
+-rw-r--r-- 1 005897537@csusb.edu domain users@csusb.edu 0 Apr 10 15:46 three.bak
+]0;005897537@csusb.edu@jb358-9:~/cse460/labs/lab1/unix/BAK[005897537@csusb.edu@jb358-9 BAK]$ cd ..
+]0;005897537@csusb.edu@jb358-9:~/cse460/labs/lab1/unix[005897537@csusb.edu@jb358-9 unix]$ rm -r BAK
+]0;005897537@csusb.edu@jb358-9:~/cse460/labs/lab1/unix[005897537@csusb.edu@jb358-9 unix]$ exit
+exit
+
+Script done on 2020-04-10 15:47:32-07:00 [COMMAND_EXIT_CODE="0"]
