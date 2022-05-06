@@ -1,2 +1,2 @@
 # CSE201
-This is a repository for CSE201 at CSUSB
+This file includes codes for CSE 201 that I learned C++
