@@ -1,2 +1,2 @@
 # CSE460
-This repository for CSE460(Operating system) at CSUSB
+This file includes codes for CSE460(Operating system) at CSUSB
