@@ -1,0 +1,35 @@
+Script started on 2021-09-06 14:33:45-07:00
+]777;notify;Command completed;exit\]0;005897537@csusb.edu@csevnc:~/cse4610/lab1\]7;file://csevnc.cse.csusb.edu/home/csusb.edu/005897537/cse4610/lab1\[005897537@csusb.edu@csevnc lab1]$ cat password.txt
+]777;notify;Command completed;cat password.txt\]0;005897537@csusb.edu@csevnc:~/cse4610/lab1\]7;file://csevnc.cse.csusb.edu/home/csusb.edu/005897537/cse4610/lab1\[005897537@csusb.edu@csevnc lab1]$ cat password.txtexit[Kcat passwordfile.txtexit[K./lab1g++ -o lab1 lab1.cpp
+]777;notify;Command completed;g++ -o lab1 lab1.cpp\]0;005897537@csusb.edu@csevnc:~/cse4610/lab1\]7;file://csevnc.cse.csusb.edu/home/csusb.edu/005897537/cse4610/lab1\[005897537@csusb.edu@csevnc lab1]$ g++ -o lab1 lab1.cpp[4Pcat password.txtexit[Kcat passwordfile.txtexit[K./lab1
+Enter 1 to add, 2 to check, 3 to delete or any other key to exit : 1
+Enter username that you want to add: aa
+Enter password that you want to add: aa
+Enter 1 to add, 2 to check, 3 to delete or any other key to exit : 1
+Enter username that you want to add: bb
+Enter password that you want to add: bb
+Enter 1 to add, 2 to check, 3 to delete or any other key to exit : 3 1
+Enter username that you want to add: cc
+Enter password that you want to add: cc
+Enter 1 to add, 2 to check, 3 to delete or any other key to exit : check     2
+Enter username that you want to check: aa
+Enter password that you want to check: aa
+It is already in the Database.
+Enter 1 to add, 2 to check, 3 to delete or any other key to exit : 2
+Enter username that you want to check: bb
+Enter password that you want to check: bb
+It is already in the Database.
+Enter 1 to add, 2 to check, 3 to delete or any other key to exit : 2
+Enter username that you want to check: cc
+Enter password that you want to check: cc
+It is already in the Database.
+Enter 1 to add, 2 to check, 3 to delete or any other key to exit : de  3
+Enter username that you want to delete: bb
+Enter 1 to add, 2 to check, 3 to delete or any other key to exit : 4 d g e
+]777;notify;Command completed;./lab1\]0;005897537@csusb.edu@csevnc:~/cse4610/lab1\]7;file://csevnc.cse.csusb.edu/home/csusb.edu/005897537/cse4610/lab1\[005897537@csusb.edu@csevnc lab1]$ cat password.txt
+aa bb
+cc dd
+]777;notify;Command completed;cat password.txt\]0;005897537@csusb.edu@csevnc:~/cse4610/lab1\]7;file://csevnc.cse.csusb.edu/home/csusb.edu/005897537/cse4610/lab1\[005897537@csusb.edu@csevnc lab1]$ exit
+exit
+
+Script done on 2021-09-06 14:35:51-07:00
